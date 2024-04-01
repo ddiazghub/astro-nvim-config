@@ -1,7 +1,3 @@
-function hello(lol)
-  -- sdk,fjaslkgjasdelkgjasedklfgjasl;kghbjaslk'ghbjaswlk'dghawslk'eghjask'l;ghjasd;kl'fhjasd;kl'fhjsad;lkhjsad;lkhrajsdk;kjl
-end
-
 return {
   -- Configure AstroNvim updates
   updater = {
