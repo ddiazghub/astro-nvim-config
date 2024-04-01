@@ -1,3 +1,7 @@
+function hello(lol)
+  -- sdk,fjaslkgjasdelkgjasedklfgjasl;kghbjaslk'ghbjaswlk'dghawslk'eghjask'l;ghjasd;kl'fhjasd;kl'fhjsad;lkhjsad;lkhrajsdk;kjl
+end
+
 return {
   -- Configure AstroNvim updates
   updater = {
@@ -18,7 +22,14 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  -- colorscheme = "catppuccin",
+  -- colorscheme = "tokyonight-night",
+  -- colorscheme = "monokai-pro",
+  -- colorscheme = "kanagawa",
+  -- colorscheme = "duskfox",
+  -- colorscheme = "carbonfox",
+  colorscheme = "onedark_dark",
+  -- colorscheme = "oxocarbon",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -31,7 +42,7 @@ return {
     formatting = {
       -- control auto formatting on save
       format_on_save = {
-        enabled = true, -- enable or disable format on save globally
+        enabled = false, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           -- "go",
         },
@@ -69,6 +80,7 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    require "user.autocmds"
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

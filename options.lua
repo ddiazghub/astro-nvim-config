@@ -1,3 +1,4 @@
+
 -- set vim options here (vim.<first_key>.<second_key> = value)
 return {
   opt = {
@@ -7,6 +8,13 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    expandtab = true,
+    scrolloff = 10,
+    guifont = "CaskaydiaCove Nerd Font",
+
+    -- Swap files are annoying
+    swapfile = false,
+    backup = false,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -17,6 +25,9 @@ return {
     icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
     resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
+
+    -- Default SQL database connection for autocomplete
+    -- db = "postgresql://test:123456@localhost/test"
   },
 }
 -- If you need more control, you can use the function()...end notation
