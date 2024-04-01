@@ -11,8 +11,8 @@ return {
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
 
-  { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
-  { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
+  -- { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
+  -- { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
 
   { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
